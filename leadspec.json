@@ -58,6 +58,31 @@
                 ],
                 "objectKeys": []
             }
+        },
+        {
+            "name": "output",
+            "variableName": "OUTPUT",
+            "description": "output.csv",
+            "isOutput": true,
+            "isOutputDir": false,
+            "isOptional": false,
+            "inputType": "CLI",
+            "chartType": "NONE",
+            "modelDataType": {
+                "name": "file",
+                "description": "",
+                "dataType": "file",
+                "extension": "csv",
+                "validators": [
+                    {
+                        "name": "required",
+                        "description": "required",
+                        "validatorType": "required",
+                        "value": ""
+                    }
+                ],
+                "objectKeys": []
+            }
         }
     ]
 }
