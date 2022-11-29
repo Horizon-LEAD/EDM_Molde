@@ -1,7 +1,5 @@
 FROM r-base:4.1.2
 
-WORKDIR /app
-
 RUN apt-get update \
     && apt install -y python3
 RUN rm -rf /var/lib/apt/lists/*
@@ -11,6 +9,6 @@ install.packages( \
     c("argparse", "readxl", "choiceDes")\
 )'
 
-COPY src/* ./
+COPY src/* /app/
 
-ENTRYPOINT [ "Rscript", "main.R" ]
+ENTRYPOINT [ "Rscript", "/app/main.R" ]

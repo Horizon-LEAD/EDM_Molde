@@ -27,4 +27,3 @@ script_dirname <- dirname(script_name)
 source(file.path(script_dirname, "edm.R"))
 
 design(args$fin, args$outdir)
-
