@@ -16,5 +16,5 @@ docker build -t edm:latest .
 docker run --rm \
     -v $PWD/sample-data:/data \
     edm:latest \
-    data/inputs/data_exampleED.xlsx /data/outputs
+    /data/input/input.xlsx /data/output
 ```
